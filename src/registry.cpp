@@ -92,7 +92,7 @@ void registry::throw_if_exists_(const std::string& logger_name) {
     }
 }
 
-// ========== 第8天新增:线程池管理 ==========
+// ========== 线程池管理 ==========
 
 void registry::init_thread_pool(size_t queue_size, size_t threads_n) {
     std::lock_guard<std::mutex> lock(mutex_);
